@@ -1,0 +1,49 @@
+.modal_screen{
+    flex:1;
+    width:100vw;
+    height:100vh;
+    z-index:20;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+ 
+}
+.modal_center{
+    position:fixed;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+
+
+.modal_input_card {
+    width:330px;
+    z-index: 1000;
+    padding-top:18px;
+    padding-bottom:18px;
+    border-radius:5px;
+    background-color: transparent;
+}
+
+.modal_heading_con{
+    padding-top:20px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    align-items:center;
+
+
+}
+.modal_heading{
+    font-size: 20px;
+    font-weight:300;
+    font-family: poppins;
+    margin-bottom:30px;
+    align-self: center;
+    text-align: center;
+}
+
+.loader{
+    width:70px;
+    height:70px;
+    color:var(--color-red);
+}

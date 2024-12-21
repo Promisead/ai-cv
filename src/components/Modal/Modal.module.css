@@ -1,0 +1,348 @@
+.modal_screen,
+.trademodal_screen,
+.changeInfomodal_screen,
+.pinmodal_screen {
+    width: 100vw;
+    height: 100vh;
+    z-index: 5000;
+    background-color: rgb(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 4000;
+    background-color: rgba(0, 0, 0,0.8);
+}
+
+
+.modal_center,
+.buy_modal_con {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.pinmodal_screen .modal_con {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.top {
+    width: 100px;
+    background-color: #fff;
+    z-index: 1000;
+    height: 5px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+
+.modal_input_card,
+.buy_modal {
+    width: 400px;
+    background-color: #fff;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    padding:10px;
+}
+
+.modal_heading_con {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+.modal_heading {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color:rgb(70,70,70)
+}
+
+.modal_button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    align-self: center;
+    background-color: rgb(240, 240, 240);
+    border-radius: 30px;
+    font-family: poppins;
+    font-size: 15px;
+
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    color: #1565c0;
+}
+
+/* styling the buymodal section */
+.buy_modal_con {
+    top: 50%
+}
+
+
+
+.buy_modal h1 {
+    margin-bottom: 30px;
+}
+
+.buy_modal p {
+    width: 100%;
+    font-size: 1.6rem;
+    margin: 0px 0% 30px 0%;
+}
+
+.buy_modal .buy_con {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+/* .buy_modal .buy_con    .buy_modal .buy_con*/
+
+.modal_screen button,
+.trademodal_screen button,
+.changeInfomodal_screen button,
+.pinmodal_screen button {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #1565c0;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: Poppins;
+    border-radius: 20px;
+}
+
+
+.modal_screen button:nth-of-type(2),
+.trademodal_screen button:nth-of-type(2),
+.changeInfomodal_screen button:nth-of-type(2) {
+    background-color: var(--color-fader);
+    color: var(--color-black)
+}
+
+
+/*  styling the common dashboard modal for buy and sell,send and recieve*/
+
+.changeInfomodal_screen h1 {
+    font-size: 1.6rem;
+    margin: 0px 0% 10px 0%;
+    text-align: left;
+
+}
+
+
+.changeInfomodal_screen p {
+    font-size: 1.3rem;
+    margin: 0px 0% 10px 0%;
+    text-align: left;
+    color: var(--fadeText);
+
+}
+
+.changeInfomodal_screen button {
+    background-color: var(--color-fader);
+    color:rgb(48, 48, 48);
+    width:100%
+}
+
+/*styling the password modal*/
+.pinmodal_screen .header {
+    display: flex;
+    align-items: flex-start;
+}
+.pinmodal_screen .header span{
+    width:25%;
+    display:flex;
+    justify-content: flex-start;
+}
+.pinmodal_screen .header p{
+    width:75%;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.pinmodal_screen .resultContainer {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dataContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.dataContainer p {
+    width: 7%
+}
+
+.dataContainer span {
+    font-size: 1.8rem
+}
+
+.pinmodal_screen .buttonContainer {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    justify-items: center;
+
+
+}
+
+.pinmodal_screen .buttonContainer span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 219, 219);
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-family: Poppins;
+}
+
+.pinmodal_screen .buttonContainer div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.downloadText{
+    font-size:1.2rem;
+    margin-bottom: 5px;
+}
+
+button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1565c0;
+    border: none;
+}
+
+/* modal */
+input {
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    color: var(--fadeText);
+    font-size: 1rem;
+    font-weight: 300;
+    border: 1px solid rgb(245, 245, 245);
+    padding: 5px;
+    background-color: rgb(247, 247, 247);
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+label{
+    font-size: .9rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+/*medium screen*/
+@media screen and (max-width: 900px) {
+
+    .modal_input_card,
+    .buy_modal {
+        width: 400px;
+    }
+
+    .buy_modal_con {
+        top: 70%
+    }
+
+    .buy_modal .buy_con button {
+        width: 100%;
+    }
+
+
+}
+
+/*smaller screen */
+
+@media screen and (max-width: 750px) {
+
+    .modal_input_card,
+    .buy_modal {
+        width: 450px;
+    }
+
+    .trademodal_screen {
+        display: none
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .modal_input_card,
+    .buy_modal {
+        width: 400px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .modal_input_card,
+    .buy_modal {
+        width: 330px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .modal_input_card,
+    .buy_modal {
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 250px) {
+
+    .modal_input_card,
+    .buy_modal {
+        width: 200px;
+
+    }
+
+}

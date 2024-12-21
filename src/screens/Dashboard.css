@@ -1,0 +1,365 @@
+/* General Styling */
+.dashboard-container body,
+.dashboard-container html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f0f8ff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  width: 98vw;
+  ;
+}
+
+/* Sidebar Styling */
+.dashboard-container .sidebar {
+  background-color: #007bff;
+  color: white;
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.dashboard-container .sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-container .sidebar-toggle {
+  display: none;
+  /* Hidden on large screens, visible on small screens */
+}
+
+/* Sidebar Links */
+.dashboard-container .sidebar .nav-link {
+  color: white;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dashboard-container .sidebar .nav-link.active {
+  background-color: #0056b3;
+}
+
+.dashboard-container .sidebar .nav-link:hover {
+  background-color: #0056b3;
+}
+
+
+/* Main Content Area */
+.dashboard-container .main-content {
+  background-color: #f0f8ff;
+}
+
+/* Navbar Styling */
+.dashboard-container .navbar {
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-container .navbar-brand {
+  font-weight: bold;
+}
+
+.dashboard-container button {
+  margin-left: auto;
+}
+
+/* Content Section */
+.dashboard-container .content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sidebar Styles */
+
+.dashboard-container .sidebar.visible {
+  left: 0;
+  /* Make the sidebar visible when toggled */
+}
+
+.dashboard-container .sidebar-header {
+  padding: 15px;
+  background-color: #0056b3;
+  /* Darker blue for the header */
+}
+
+.dashboard-container .sidebar-toggle {
+  color: white;
+  background-color: #007bff;
+  /* Blue background for menu button */
+  border: none;
+  font-size: 1.8rem;
+}
+
+.dashboard-container .sidebar-toggle-btn {
+  color: white;
+  background-color: #007bff;
+  /* Blue background for menu button */
+  border: none;
+  font-size: 1.8rem;
+  display: block;
+}
+
+/* Navbar and Header */
+.dashboard-container .header-navbar {
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  /* Beautiful gradient */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+}
+
+.dashboard-container .welcome-text {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.dashboard-container .user-icon {
+  color: white;
+}
+
+.dashboard-container .logout-btn {
+  background-color: white;
+  border-color: white;
+  color: #4e54c8;
+  font-weight: bold;
+}
+
+.dashboard-container .logout-btn:hover {
+  background-color: #4e54c8;
+  color: white;
+}
+
+.dashboard-container .sidebar-toggle-btn {
+  color: white;
+  background-color: #007bff;
+  /* Blue background even when not clicked */
+  font-size: 1.8rem;
+}
+
+
+
+.dashboard-container .header-navbar {
+  background: linear-gradient(135deg, #4e73df, #224abe);
+  /* Beautiful gradient background */
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for depth */
+}
+
+
+
+
+
+
+
+.dashboard-container .card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dashboard-container .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container .templates-list {
+  padding: 20px 0;
+}
+
+.dashboard-container .btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.dashboard-container .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+
+
+
+
+/* Styling the pricing cards */
+.pricing-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.highlighted-plan {
+  border: 2px solid #007bff;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Text and colors */
+.pricing-card h3 {
+  font-size: 2rem;
+}
+
+.pricing-card ul li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.text-white {
+  color: #fff;
+}
+
+/* Adjust the sidebar and header to fit with the new content */
+.dashboard-container .main-content {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .dashboard-container .sidebar {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .dashboard-container .sidebar.open {
+    width: 250px;
+    padding: 20px;
+  }
+
+  .dashboard-container .sidebar-toggle {
+    display: block;
+    /* Show toggle button on small screens */
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
+  .dashboard-container .main-content {
+    padding: 10px;
+  }
+
+  .dashboard-container .content {
+    padding: 10px;
+  }
+
+  .dashboard-container .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-container .navbar-brand {
+    margin-bottom: 10px;
+  }
+
+  .dashboard-container .ml-auto {
+    margin-left: 0;
+  }
+}
+
+
+
+
+@media (max-width: 576px) {
+
+  .dashboard-container .sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #007bff;
+    /* Set blue background */
+    transition: left 0.3s ease;
+    z-index: 1050;
+    /* Make sure it's in front of the content */
+  }
+
+  .dashboard-container .welcome-text {
+    font-size: 1.2rem;
+  }
+
+  .dashboard-container .user-icon {
+    font-size: 24px;
+  }
+
+  .dashboard-container .logout-btn {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.7rem;
+  }
+}
+
+
+
+
+
+
+.pricing-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

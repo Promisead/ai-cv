@@ -1,0 +1,35 @@
+.splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Background color for splash screen */
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #1565c0;; /* Ball color */
+    animation: bounce 0.6s infinite alternate;
+  }
+  
+  .ball1 {
+    animation-delay: 0s;
+  }
+  
+  .ball2 {
+    animation-delay: 0.2s;
+  }
+  
+  .ball3 {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    to {
+      transform: translateY(-50px); /* How high the balls bounce */
+    }
+  }
+  

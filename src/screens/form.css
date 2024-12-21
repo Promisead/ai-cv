@@ -1,0 +1,111 @@
+/* Form Container */
+.form-container{
+    width:100vw;
+    align-items: center;
+}
+
+.cv-form-containers {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width:100%;
+
+}
+
+.form-title {
+    text-align: center;
+    color: #333;
+}
+
+.cv-form {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.cv-form-containers form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Heading Styles */
+.cv-form-containers h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #2c3e50;
+    /* Example header color */
+}
+
+.cv-form-containers h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #34495e;
+    /* Example section color */
+}
+
+/* Input and Textarea Styles */
+.cv-form-containers input,
+.cv-form-containers textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* Focus State */
+.cv-form-containers input:focus,
+.cv-form-containers textarea:focus {
+    border-color: #3498db;
+    /* Example focus color */
+    outline: none;
+}
+
+/* Button Styles */
+.cv-form-containers button {
+    background-color: #3498db;
+    /* Example button color */
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+.cv-form-containers button:hover {
+    background-color: #2980b9;
+    /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .cv-form-containers form {
+        padding: 15px;
+    }
+
+    .cv-form-containers h2 {
+        font-size: 1.5em;
+    }
+
+    .cv-form-containers h3 {
+        font-size: 1.3em;
+    }
+
+    .cv-form-containers button {
+        width: 100%;
+    }
+}

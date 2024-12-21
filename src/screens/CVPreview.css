@@ -1,0 +1,187 @@
+/* Global Styles */
+/* Global Styles */
+  
+.cv-container {
+  width: 90%;
+  max-width: 900px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+  
+  .cv-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    font-size: 16px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .cv-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .cv-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .cv-header p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .cv-profile, .cv-section {
+    margin-bottom: 30px;
+  }
+  
+  .cv-profile h3, .cv-section h3 {
+    font-size: 24px;
+    color: #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .cv-job, .cv-education, .cv-reference {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    background-color: #fbfbfb;
+  }
+  
+ 
+  
+  .cv-job h4, .cv-education h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .cv-location, .cv-date {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .cv-skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .cv-skill {
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .cv-skill strong {
+    font-weight: bold;
+  }
+  
+  .cv-skill span {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .cv-reference p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .cv-reference strong {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .cv-reference i {
+    margin-right: 5px;
+  }
+  
+  .fas {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .cv-card {
+      padding: 20px;
+    }
+  
+    .cv-header h1 {
+      font-size: 28px;
+    }
+  
+    .cv-header p {
+      font-size: 14px;
+    }
+  
+    .cv-profile, .cv-section {
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  .container {
+    margin-top: 20px; /* Reduced margin */
+    padding: 10px; /* Reduced padding */
+}
+
+.card {
+    padding: 15px; /* Reduced padding */
+}
+
+header h1 {
+    font-size: 1.5rem; /* Smaller font size */
+}
+
+section h3 {
+    font-size: 1.1rem; /* Smaller heading font size */
+}
+
+section p, section ul {
+    font-size: 0.9rem; /* Smaller font size for text */
+}
+
+ul li {
+    margin-bottom: 5px; /* Reduced space between list items */
+}
+
+.share-buttons-container {
+    margin-top: 10px; /* Reduced margin */
+}
+
+button {
+    font-size: 0.9rem; /* Smaller buttons */
+    padding: 8px 12px; /* Reduced button padding */
+    margin-bottom: 8px; /* Reduced margin between buttons */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 5px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.8rem; /* Smaller font on mobile */
+    }
+}
