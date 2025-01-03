@@ -127,7 +127,7 @@ function Education() {
         </div>
       ))}
     </div>
-    <div className='flex justify-between'>
+    {/* <div className='flex justify-between'>
             <div className='flex gap-2'>
             <Button variant="outline" onClick={AddNewEducation} className="text-[#2563EB]"> + Add More Education</Button>
             <Button variant="outline" onClick={RemoveEducation} className="text-[#2563EB]"> - Remove</Button>
@@ -136,7 +136,17 @@ function Education() {
             <Button  className="flex gap-2 bg-[#2563EB] text-white hover:bg-blue-700" disabled={loading} onClick={()=>onSave()}>
             {loading?<LoaderCircle className='animate-spin' />:'Save'}    
             </Button>
-        </div>
+        </div> */}
+        <div className='flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-2'>
+    <div className='flex flex-col sm:flex-row gap-2 sm:gap-2'>
+        <Button variant="outline" onClick={AddNewEducation} className="text-[#2563EB]"> + Add More Education</Button>
+        <Button variant="outline" onClick={RemoveEducation} className="text-[#2563EB]"> - Remove</Button>
+    </div>
+    <Button className="flex gap-2 bg-[#2563EB] text-white hover:bg-blue-700" disabled={loading} onClick={() => onSave()}>
+        {loading ? <LoaderCircle className='animate-spin' /> : 'Save'}
+    </Button>
+</div>
+
     </div>
   )
 }

@@ -82,7 +82,7 @@
     flex-direction: row;
     gap: 20px;
   }
-
+ 
   .nav-item {
     position: relative;
   }
@@ -114,6 +114,11 @@
 }
 
 @media (max-width: 768px) {
+  .header-banner {
+    background-attachment: scroll; /* Fix background-attachment issue on mobile */
+    background-position: center; /* Ensure the background image is centered */
+    background-size: cover; /* Ensure the background image covers the area */
+  }
   .header-banner h1 {
     font-size: 24px;
   }

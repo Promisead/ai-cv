@@ -177,7 +177,9 @@ function Dashboard() {
                 Start Creating AI resume to land your next Job role
               </p>
               <div
-                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 mt-10
+                className="grid grid-cols-2 
+      md:grid-cols-3 lg:grid-cols-3 gap-10
+      mt-10
       "
               >
                 <AddResume />

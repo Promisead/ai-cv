@@ -88,8 +88,9 @@ function Skills() {
             </div>
         ))}
     </div>
-    <div className='flex justify-between'>
-            <div className='flex gap-2'>
+    <div className='flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-2'>
+
+       <div className='flex flex-col sm:flex-row gap-2 sm:gap-2'>
             <Button variant="outline" onClick={AddNewSkills} className="text-[#2563EB]"> + Add More Skill</Button>
             <Button variant="outline" onClick={RemoveSkills} className="text-[#2563EB]"> - Remove</Button>
 
@@ -98,7 +99,9 @@ function Skills() {
             {loading?<LoaderCircle className='animate-spin' />:'Save'}    
             </Button>
         </div>
-    </div>
+    </div> 
+  
+
   )
 }
 
