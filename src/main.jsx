@@ -121,7 +121,7 @@ const AppWrapper = () => {
     },
     {
       path: "/my-resume/:resumeId/view",
-      element: <ViewResume />,
+      element: user ? <ViewResume /> : <LoginPage />,
     },
   ]);
 
