@@ -7,7 +7,7 @@ import { combineReducers, createStore, applyMiddleware } from "redux";
 import { thunk } from "redux-thunk";
 import App from "./App.jsx";
 import { RingLoader } from "react-spinners";
-import ViewResume from "./my-resume/[resumeId]/view";
+//import ViewResume from "./my-resume/[resumeId]/view";
 
 // Lazy load components
 const Home = lazy(() => import("./screens/Home.jsx"));
