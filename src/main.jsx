@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense, lazy } from "react";
+import React, { useEffect, useState, Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { Provider, useDispatch, useSelector } from "react-redux";
@@ -39,6 +39,8 @@ const store = createStore(rootReducer, applyMiddleware(thunk));
 const AppWrapper = () => {
   let { user } = useSelector((state) => state.userAuth);
   let dispatch = useDispatch();
+  const [resumeInfo, setResumeInfo] = useState(null);
+
 
   useEffect(() => {
     const checkAutoLogin = async () => {
