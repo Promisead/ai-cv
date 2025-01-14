@@ -6,6 +6,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import GlobalApi from './../../../../service/GlobalApi'
 import { RWebShare } from 'react-web-share'
+import { Loader2 } from "lucide-react";
+
 
 function ViewResume() {
     const [resumeInfo, setResumeInfo] = useState(null);
@@ -33,8 +35,13 @@ function ViewResume() {
     };
   
     if (!resumeInfo) {
-      return <div>Loading resume...</div>; // Show a loading state while fetching
-    }
+        return (
+          <div className="flex justify-center items-center min-h-screen">
+            <Loader2 className="animate-spin" />
+          </div>
+        );
+      }
+      
   
     return (
       <ResumeInfoContext.Provider value={{ resumeInfo, setResumeInfo }}>
